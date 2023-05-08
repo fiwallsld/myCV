@@ -1,0 +1,41 @@
+@media (min-width: 768px) and (max-width: 1199.98px) {
+
+    .nav-item:nth-child(3) {
+        width: 0;
+    }
+
+    .personal-img {
+        display: none;
+    }
+    
+    .project-item--info {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        align-items: center;
+    }
+
+    .info--time {
+        grid-row: 1/ -1;
+    }
+
+    /* DIGITAL */
+
+    .digital {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teams i,
+    .primary i,
+    .timeline .number {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    /* Timeline */
+    .timeline-item {
+        display: flex;
+        /* flex-direction: column; */
+    }
+    
+}

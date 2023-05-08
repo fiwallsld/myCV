@@ -1,0 +1,57 @@
+@media (max-width: 767.98px) { 
+    .navbar > .container{
+        justify-content: start;
+    }
+
+    .nav-item,
+    .nav-item:last-child {  
+        border: 0;
+    }
+
+    .personal-img,
+    .nav-item:nth-child(3) {
+        display: none;
+    }
+
+    .certificate-items::after {
+        border-bottom: 0;
+    }
+
+    .certi-item:nth-child(1),
+    .certi-item:nth-child(3) {
+        border-right: 0;
+    }
+
+    .certi-item {
+        border-bottom: 1px solid #b46a2e;
+    }
+
+    .project-item--info {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .info--name{
+        margin: 4px 0;
+    }
+
+    .footer-item {
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    /* DIGITAL */
+
+    .digital {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teams i,
+    .primary i,
+    .timeline .number {
+        font-size: 1.5rem;
+        text-align: center;
+    }   
+}

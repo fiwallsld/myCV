@@ -1,0 +1,326 @@
+
+* a { 
+    text-decoration: none;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+}
+/* ---------------------Banner---------------- */
+#banner {
+    position: relative;
+}
+
+.banner-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.banner-name {
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.personal-img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 5px solid var(--bs-gray-500);
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 75%);
+}
+
+/* -----------------------Nav-bar-------------------------------- */
+.navbar > .container{
+    justify-content: center;
+}
+
+.nav-item {  
+    text-transform: uppercase;
+    border-left: 1px solid var(--bs-gray-500);
+}
+
+.nav-item:last-child {
+    border-right: 1px solid var(--bs-gray-500);
+}
+
+.nav-item:nth-child(3) {
+    width: 160px;
+}
+
+/* -----------------------About-------------------------------- */
+.section-title {
+    margin-bottom: 44px;
+    letter-spacing: 1px;
+}
+
+#about .info {
+    list-style: none;
+}
+
+#target {
+    background-color: var(--bs-gray-200);
+}
+
+#personal-info {
+    background-color: var(--bs-gray-300);
+}
+
+
+/* -----------------------Job-info-------------------------------- */
+.col-content{
+    height: 100%;
+}
+
+.job-info--head, 
+.job-info--icon {
+    font-size: 36px;
+    text-align: center;
+    line-height: 2;
+}
+
+.job-info--detail {
+    padding-left: 24px;
+}
+
+.detail--head {
+    letter-spacing: 0.9;
+    font-weight: 600;
+    position: relative;
+}
+
+.detail--head:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #199cdb;
+    position: absolute;
+    left: -18px;
+    top: 30%;
+}
+.detail--time {
+    margin: 12px 0;
+}
+
+.btn-now {
+    display: inline-block;
+    background-color: #199cdb;
+    color: white;
+    text-align: center;
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+
+.level-line {
+    background: #d6e0e6;
+    display: inline-block;
+    height: 2px;
+    width: 45px;
+    margin-right: 10px;
+}
+
+.level-up {
+    background: #199cdb; 
+}
+
+.hobby-item {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.hobby-item--icon {
+    background-color: #ffffff;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #199cdb;
+    border-radius: 50%;
+}
+
+/* --------------------------Certificate----------------------- */
+#certificate {
+    position: relative;
+}
+
+.certi-item {
+    margin-bottom: 24px;
+}
+
+.certificate-items::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 1px solid #b46a2e;
+    width: 100%;
+    top: 52%;
+}
+
+.certi-item:nth-child(1),
+.certi-item:nth-child(3) {
+    border-right: 1px solid #b46a2e;
+}
+
+.certi-item--info {
+    margin-top: 12px;
+    padding: 0 24px;
+}
+
+.certi--name {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* -------------------------Project----------------------- */
+.project-item {
+    height: 100%;
+}
+
+.project-item--name {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.project--img img {
+    /* width: 100%; */
+}
+
+.info--time {
+    font-style: normal;
+}
+
+.project-item--info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 12px;
+    margin: 8px 0;
+    border-top: 1px solid var(--bs-gray-500);
+}
+
+td {
+    border-top: 1px solid var(--bs-gray-500);
+    padding: 12px;
+}
+
+/* ------------------------------Footer----------------------- */
+#footer {
+    background-color: var(--bs-gray-200);
+}
+
+#footer ul {
+    margin: 0;
+}
+
+.footer-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.footer-item {
+    margin: 0 16px;
+    font-size: 1.5rem;
+    color: var(--bs-primary);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.social-icons i:hover,
+.footer-item:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+/* -----------------------DIGITAL_CV----------------------------- */
+
+.digital {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.digital section .container {
+    padding: 12px;
+}
+
+.goals {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-items: center;
+}
+
+.goal {
+    border-bottom: 1px solid var(--bs-gray-500);
+
+}
+
+.goal-icon {
+    font-size: 2rem;
+    text-align: center;
+}
+.goal-icon  i {
+    height: 100%;
+    align-items: center;
+}
+
+.scopes {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.timeline {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.head {
+    color: var(--bs-primary);
+    border-bottom: 1px solid var(--bs-gray-500);
+}
+
+/* Team */
+
+.teams i,
+.primary i,
+.timeline .number {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* Timeline */
+.timeline .number {
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    padding: 2px;
+    background-color: var(--bs-info);
+    border: 2px solid var(--bs-gray-500);
+}
+
+.timeline-infor {
+    border-bottom: 1px dashed var(--bs-gray-500);
+    margin-bottom: 12px;
+
+}
+
+
